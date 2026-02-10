@@ -1,0 +1,19 @@
+@page
+@model DadJokesModel
+
+<div class="container">
+
+    <h1 class="text-center">Dad Joke Generator</h1>
+
+    @foreach (var joke in Model.JokesToShow)
+    {
+        <p class="text-center mb-3">@joke</p>
+    }
+
+    <div class="text-center mt-4">
+        <form method="post">
+            <button type="submit">More Jokes!</button>
+        </form>
+    </div>
+
+</div>
